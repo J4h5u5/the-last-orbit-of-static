@@ -68,7 +68,7 @@ function Hero() {
         </div>
         <div className="block">
           <div className="label">located</div>
-          <div className="value">54°41′N <span style={{color:"var(--fg-3)"}}>·</span> 25°17′E</div>
+          <div className="value">25.689° N <span style={{color:"var(--fg-3)"}}>·</span> 55.738° E</div>
         </div>
       </div>
 

@@ -129,7 +129,7 @@ function Footer() {
         </div>
         <div>
           <h4>coordinates</h4>
-          <a>54°41′N · 25°17′E</a>
+          <a>25.689° N · 55.738° E</a>
           <a>broadcasting · mmxix — now</a>
           <a>signal strength: steady</a>
         </div>
