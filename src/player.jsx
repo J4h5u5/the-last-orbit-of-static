@@ -121,7 +121,7 @@ function OrbitalPlayer({ tracks, playingId, toggle }) {
 
   // rings
   const rings = [150, 200, 260, 320, 380];
-  const scale = Math.min(size.w, size.h) / 780;
+  const scale = Math.max(0.3, Math.min(size.w, size.h) / 780);
 
   return (
     <div className="orbit-stage only-desktop" ref={ref}>

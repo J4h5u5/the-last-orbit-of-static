@@ -354,7 +354,8 @@ button { font-family: inherit; cursor: pointer; }
 .orbit-stage {
   position: relative;
   width: 100%;
-  height: min(85vh, 780px);
+  height: 85vh;
+  max-height: 780px;
   max-width: 1400px;
   margin: 0 auto;
 }
