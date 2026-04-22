@@ -3,8 +3,11 @@
    ============================================================ */
 
 function App() {
+  const [ready, setReady] = useState(false);
   const [tweaks, setTweaks] = useState(window.TWEAKS);
   const [editModeOn, setEditModeOn] = useState(false);
+
+  useEffect(() => { window.__dataPromise.then(() => setReady(true)); }, []);
 
   // announce tweaks capability to parent
   useEffect(() => {
@@ -25,6 +28,12 @@ function App() {
     document.documentElement.setAttribute("data-type", tweaks.typePair);
     document.documentElement.setAttribute("data-dark", tweaks.darkness);
   }, [tweaks.typePair, tweaks.darkness]);
+
+  if (!ready) return (
+    <div style={{ display:"flex", alignItems:"center", justifyContent:"center", height:"100vh", fontFamily:"monospace", color:"#444", fontSize:12, letterSpacing:"0.2em", textTransform:"uppercase" }}>
+      [ initializing signal... ]
+    </div>
+  );
 
   return (
     <>
