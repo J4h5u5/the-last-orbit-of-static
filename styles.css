@@ -1518,9 +1518,9 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* show/hide helpers */
-.only-desktop { display: initial; }
+.only-desktop { display: revert; }
 .only-mobile  { display: none; }
 @media (max-width: 720px) {
   .only-desktop { display: none !important; }
-  .only-mobile  { display: initial; }
+  .only-mobile  { display: revert; }
 }
